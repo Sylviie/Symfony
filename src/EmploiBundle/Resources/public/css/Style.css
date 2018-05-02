@@ -1,0 +1,52 @@
+.wall{
+
+    display: block;
+    margin-left:300px ;
+    margin-right: 300px;
+}
+.color{
+
+    background-color: #5eb5e0;
+}
+
+table {
+
+    border-style: solid;
+
+
+}
+
+th{
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #3c3c3c;
+
+}
+
+td{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.rightlink{
+
+    display: block;
+    color: #0f0f0f;
+    float: right;
+}
+
+a{
+
+    color: #0f0f0f;
+ }
+button{
+
+    display: block;
+    float: right;
+}
+
+u{
+
+    font-style: normal;
+    font-size: large;
+}

@@ -1,0 +1,76 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="wall">
+        <a class="leftlink" href="programming.html.twig"><u>{{ "Programming" }}</u></a>
+        <br/>
+        <br/>
+        <table class="table table-success">
+
+            <tr>
+                <th scope="col">{{ "Location" }}</th>
+                <th scope="col">{{ "Position" }}</th>
+                <th scope="col">{{ "Company" }}</th>
+            </tr>
+
+
+            {% for programming in viewProgramming %}
+                <tr>
+
+                    <td>{{ programming.location }}</td>
+                    <td>{{ programming.position }}</td>
+                    <td>{{ programming.company }}</td>
+                </tr>
+
+
+            {% endfor %}
+        </table>
+
+    </div>
+    <div class="wall">
+        <dt><u>{{ "Management" }}</u></dt>
+        <br/>
+
+
+        <table class="table">
+            <tr>
+                <th>{{ "Location" }}</th>
+                <th>{{ "Position" }}</th>
+                <th>{{ "Company" }}</th>
+            </tr>
+            {% for management in viewManagement %}
+                <tr>
+
+                    <td>{{ management.location }}</td>
+                    <td>{{ management.position }}</td>
+                    <td>{{ management.company }}</td>
+
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="wall">
+    <dt><u>{{ "Enseignement" }}</u></dt>
+    <br/>
+
+
+    <table class="table">
+        <tr>
+            <th>{{ "Location" }}</th>
+            <th>{{ "Position" }}</th>
+            <th>{{ "Company" }}</th>
+        </tr>
+        {% for enseignement in viewEnseignement %}
+            <tr>
+
+                <td>{{ enseignement.location }}</td>
+                <td>{{ enseignement.position }}</td>
+                <td>{{ enseignement.company }}</td>
+
+            </tr>
+        {% endfor %}
+    </table>
+    <div class="rightlink"><a href="#"><u>And 10 more...</u></a></div>
+
+
+{% endblock %}
